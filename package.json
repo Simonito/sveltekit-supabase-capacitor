@@ -1,16 +1,21 @@
 {
-  "name": "sveltekit-supabase-ssr",
+  "name": "sveltekit-supabase-capacitor",
   "version": "0.12.0",
   "private": true,
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "build-node": "ADAPTER=node npm run build",
+    "build-static": "ADAPTER=static npm run build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
+    "@capacitor/cli": "^6.2.0",
     "@sveltejs/adapter-auto": "^3.3.1",
+    "@sveltejs/adapter-node": "^5.2.11",
+    "@sveltejs/adapter-static": "^3.0.8",
     "@sveltejs/kit": "^2.12.1",
     "@sveltejs/vite-plugin-svelte": "^4.0.3",
     "@types/jsonwebtoken": "^9.0.7",
@@ -23,6 +28,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/ios": "^6.2.0",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.47.8",
     "jose": "^5.9.6"

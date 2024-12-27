@@ -1,0 +1,1 @@
+export const env={"PUBLIC_SUPABASE_URL":"https://noqzrmbjuhcknzjngbgm.supabase.co","PUBLIC_SUPABASE_ANON_KEY":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5vcXpybWJqdWhja256am5nYmdtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjYzMzEwNjIsImV4cCI6MjA0MTkwNzA2Mn0.beYc5CIByv-khYAA1lBkiQIzeKjvKiEIxmazhxorJjI","PUBLIC_SERVER_URL":"http://localhost:5173"}
