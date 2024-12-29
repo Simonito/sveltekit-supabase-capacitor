@@ -1,1 +1,0 @@
-import{a as p,t as e}from"../chunks/disclose-version.Cgb6QxUY.js";import"../chunks/legacy.lr0BBRJJ.js";import{g as o}from"../chunks/runtime.CZdwG2ZK.js";var r=e(`<h1>HOME</h1> <p>👇 will redirect you to /auth if you aren't authenticated.</p> <a href="/app">App</a>`,1);function f(t){var a=r();o(4),p(t,a)}export{f as component};
