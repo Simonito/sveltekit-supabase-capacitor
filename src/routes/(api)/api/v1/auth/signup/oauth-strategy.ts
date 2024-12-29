@@ -9,7 +9,11 @@ export async function handleOAuthSignup(event: RequestEvent) {
     const { data, error } = await event.locals.supabase.auth.signInWithOAuth({ 
       provider,
       options: {
-        redirectTo: `${event.url.origin}/api/v1/auth/callback?next=/app`
+        redirectTo: `${event.url.origin}/api/v1/auth/callback?next=/app`,
+        queryParams: {
+          access_type: "offline",
+          prompt: "consent",
+        },
       }
     });
 

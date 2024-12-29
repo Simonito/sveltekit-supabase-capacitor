@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { setError, superForm } from 'sveltekit-superforms';
+  import { superForm } from 'sveltekit-superforms';
   import { zod } from 'sveltekit-superforms/adapters';
   import { _userEmailSignupSchema } from './+page.js';
   import { PUBLIC_SERVER_URL } from '$env/static/public';
   import { goto } from '$app/navigation';
-    import GoogleSignup from './forms/GoogleSignup.svelte';
+  import GoogleSignup from './forms/GoogleSignup.svelte';
 
   const EMAIL_SIGNUP_URL = `${PUBLIC_SERVER_URL}/api/v1/auth/signup?strategy=email`;
   const { data } = $props();
@@ -87,4 +87,4 @@
 </form>
 
 <br>
-<GoogleSignup />
+<GoogleSignup supabase={data.supabase} />

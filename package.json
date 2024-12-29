@@ -6,7 +6,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "build-node": "ADAPTER=node npm run build",
-    "build-static": "ADAPTER=static npm run build",
+    "build-static": "set ADAPTER=static && npm run build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
@@ -29,6 +29,8 @@
   "type": "module",
   "dependencies": {
     "@capacitor/android": "^6.2.0",
+    "@capacitor/app": "^6.0.2",
+    "@capacitor/browser": "^6.0.4",
     "@capacitor/core": "^6.2.0",
     "@capacitor/ios": "^6.2.0",
     "@supabase/ssr": "^0.5.2",
